@@ -1,0 +1,17 @@
+#server port
+server:  port: 9090
+  
+#Database properties
+
+spring:  datasource:    username: system
+    password: admin
+    url: jdbc:oracle:thin:@localhost:1521:xe
+ 
+#Orm properties
+  jpa:    properties:      hibernate:
+        show_sql: true
+        format_sql: true
+    hibernate:      ddl-auto: update
+      
+#view resolver properties  mvc:    view:      prefix: /views/
+      suffix: .jsp
